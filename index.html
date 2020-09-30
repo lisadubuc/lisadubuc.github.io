@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Main page</title>
+	<link rel="stylesheet" type="text/css" href="mystyles.css">
+</head>
+
+<body>
+	<div id="logo">
+		<img src="images/gem-logo.png">
+	</div>
+
+	<nav id="myNav" class="overlay">
+		<span class="closebtn" id="close">×</span>
+		<div class="overlay-content">
+			<a href="index.html" class="one"><span>Main</span></a>
+			<a href="homework.html" class="two"><span>Homework</span></a>
+			<a href="readings.html" class="three"><span>Readings</span></a>
+			<a href="project.html" class="four"><span>Project</span></a>
+		</div>
+	</nav>
+
+	<span id="trigger">☰</span>
+
+
+	<section id="s1">
+		<header>
+			<h2>Cherche et Trouve</h2>
+			<h1>All You Need Website</h1>
+		</header>
+	</section>
+
+	<section id="s2">
+		<article class="multi">
+			<h1>Note About the Artist</h1>
+			<p>I’m a third year undergraduate student at Concordia University in the Design program. I am mainly
+				interested in game design but I would also love to be able to make a difference in the world by doing
+				shock advertisements. I would like to be able to show the true nature of the world and make people want
+				to change and help make a change. Ideally I would love to do some field work as well by taking the shock
+				imagery but this is to be determined. I also love to use design for interior and architectural design. I
+				do still enjoy coding although it can be frustrating at times. I am just a slow learner but hopefully my
+				work will be successful on this website. Enjoy and find all you need to see how I use my coding to
+				create my work. </p>
+
+		</article>
+	</section>
+
+
+
+
+	<script>
+		const trig = document.querySelector('#trigger');
+		const closer = document.querySelector('#close');
+
+		trig.addEventListener('click', openNav);
+		closer.addEventListener('click', closeNav);
+
+		function openNav() {
+			document.getElementById("myNav").style.width = "100%";
+		}
+
+		function closeNav() {
+			document.getElementById("myNav").style.width = "0%";
+		}
+	</script>
+</body>
+
+</html>

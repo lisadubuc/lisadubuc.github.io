@@ -1,0 +1,192 @@
+/*Style*/
+@import 'https://fonts.googleapis.com/css?family=Passion+One|Poiret+One';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*phone*/
+
+html,
+body {
+	height: 100%;
+}
+
+#logo {
+	position: absolute;
+	left: 20px;
+	top: 26px;
+	color: #fff;
+	z-index: 10;
+}
+
+#logo img {
+	width: 50px;
+	height: auto;
+}
+
+
+section {
+	position: relative;
+	background: transparent;
+	padding: 20px;
+}
+
+footer {
+	padding: 20px;
+	background: #101825;
+	color: #fff;
+	text-align: center;
+}
+
+#s1 {
+	min-height: 70%;
+	height: auto;
+	background: url(../images/plane.jpg) fixed center center no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#s1 header {
+	text-align: center;
+	color: #fff;
+}
+
+#s1 h2 {
+	font-family: 'Grandstander', cursive;
+	font-size: 20px;
+	line-height: 10px;
+	text-transform: capitalize;
+	color: #eee;
+	font-weight: normal;
+}
+
+#s1 h1 {
+	font-family: 'Grandstander';
+	font-size: 5px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+#s2 {
+	background: rgb(10, 2, 90);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#s2 article {
+	margin: 24px;
+	color: rgb(255, 255, 255);
+}
+
+#s2 h1 {
+	font-family: 'Bebas Neue';
+	font-size: 30px;
+	text-transform: uppercase;
+	color: rgb(255, 255, 255);
+	font-weight: normal;
+}
+
+.multi {
+	-webkit-column-count: 1;
+	-moz-column-count: 1;
+	column-count: 1;
+}
+
+#s3 {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	background: black;
+}
+
+#s3 article {
+	margin: 20px;
+	background: rgb(10, 2, 90);
+	height: 300px;
+	position: relative;
+	flex: 1 100%;
+}
+
+#s3 article p {
+	background: rgb(10, 2, 90);
+	font-family: 'Bebas Neue';
+	font-size: 20px;
+	color: rgb(255, 255, 255);
+	padding: 10px 20px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+
+/* Tablet */
+
+
+@media only screen and (min-width: 481px) {
+	.overlay a {
+		flex: 1 auto;
+		font-size: 72px;
+		/*	border:1px solid red;*/
+	}
+
+	.overlay a:hover,
+	.overlay a:focus {
+		flex: 2 auto;
+	}
+
+	.overlay a span {
+		transform: rotate(-90deg);
+		transform-origin: left top;
+	}
+
+	#logo img {
+		width: 60px;
+		height: auto;
+	}
+
+	#s1 h2 {
+		font-size: 30px;
+		line-height: 15px;
+	}
+
+	#s1 h1 {
+		font-size: 72px;
+	}
+
+
+	#s3 article {
+		flex: 1 auto;
+	}
+
+	.multi {
+		column-count: 3;
+	}
+}
+
+
+/* Desktop */
+
+@media only screen and (min-width: 769px) {
+	#logo img {
+		width: 50px;
+		height: auto;
+	}
+
+	#s1 h2 {
+		font-size: 40px;
+		line-height: 0px;
+	}
+
+	#s1 h1 {
+		font-size: 96px;
+	}
+
+}

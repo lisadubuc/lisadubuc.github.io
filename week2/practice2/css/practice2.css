@@ -1,0 +1,62 @@
+/* CSS SIMPLE GRID EXAMPLE */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+section.parent {
+	background-color: white;
+	color: white;
+	border-left: 40px solid white;
+	height: 100vh;
+	display: grid;
+	grid-template-rows: 10fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+article {
+	background-color: white;
+	font-family: gridnik, futura, collis, univers, sans-serif;
+	color: rgb(221, 214, 214);
+	font-size: 55px;
+	text-decoration: underline;
+
+}
+
+.a1 {
+	background: white;
+	display: flex;
+	align-items: center;
+}
+
+
+.a2 {
+	background: rgb(82, 184, 82);
+}
+
+.a3 {
+	background: rgb(16, 16, 124);
+}
+
+.a4 {
+	background: black;
+}
+
+.a5 {
+	background: rgb(82, 184, 82);
+}
+
+.a6 {
+	background: rgb(236, 49, 2);
+}
+
+.a7 {
+	background: rgb(16, 16, 124);
+}
+
+.a8 {
+	background: rgb(82, 184, 82);
+}
+
+}

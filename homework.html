@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HomeWork Page</title>
+    <link rel="stylesheet" type="text/css" href="css/homework.css">
+</head>
+
+<body>
+
+
+    <nav id="myNav" class="overlay">
+        <span class="closebtn" id="close">×</span>
+        <div class="overlay-content">
+            <a href="index.html" class="one"><span>Main</span></a>
+            <a href="homework.html" class="two"><span>Homework</span></a>
+            <a href="readings.html" class="three"><span>Readings</span></a>
+            <a href="project.html" class="four"><span>Project</span></a>
+        </div>
+    </nav>
+
+    <span id="trigger">☰</span>
+
+
+    <section id="s1">
+        <header>
+            <h1>Homework</h1>
+        </header>
+    </section>
+
+    <section id="s2">
+        <article>
+            <p>Practice Number 1</p>
+            <a href="/mainwebsite/week1/practice1/practice.html" target="blank">
+                <img src="images/prac1.png" alt="" height="500" width="600"></a>
+        </article>
+
+        </article>
+    </section>
+
+    <section id="s3">
+        <article>
+            <p>Practice Number 2</p>
+            <a href="/mainwebsite/week2/practice2/practice2.html" target="blank">
+                <img src="images/prac2.png" alt="" height="500" width="600"></a>
+        </article>
+
+    </section>
+
+
+    <script>
+        const trig = document.querySelector('#trigger');
+        const closer = document.querySelector('#close');
+
+        trig.addEventListener('click', openNav);
+        closer.addEventListener('click', closeNav);
+
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+</body>
+
+</html>
