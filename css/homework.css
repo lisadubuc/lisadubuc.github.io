@@ -23,7 +23,7 @@ section {
 #s1 {
     min-height: 100%;
     height: auto;
-    background: url(images/dunes.jpg) fixed center center no-repeat;
+    background: url(/images/dunes.jpg) fixed center center no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
