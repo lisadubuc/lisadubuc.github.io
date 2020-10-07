@@ -108,6 +108,26 @@ section {
 	font-weight: normal;
 }
 
+#s5 {
+	color: rgb(170, 183, 199);
+	font-family: 'Sansita Swashed';
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#s5 article {
+	margin: 24px;
+}
+
+#s5 h1 {
+	font-family: 'Arvo', italic;
+	font-size: 36px;
+	text-transform: uppercase;
+	color: rgb(170, 183, 199);
+	font-weight: normal;
+}
+
 .multi {
 	-webkit-column-count: 1;
 	-moz-column-count: 1;
