@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Oswald:700|Playfair+Display|Quicksand');
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
+
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	background: url(../img/ghost.jpg) no-repeat fixed center center;
+	background-size: cover;
+}
+
+main {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+section {
+	width: 70%;
+	text-align: center;
+	margin-top: 5%;
+}
+
+h2 {
+	font-size: 2vmax;
+	font-family: 'Chilanka', sans-serif;
+	color: rgb(0, 0, 0);
+	text-shadow: 3px 3px 0px rgba(255, 255, 255, 0.712);
+}
+
+h1 {
+	font-size: 10vmax;
+	letter-spacing: -1vmin;
+	font-family: 'Oswald', sans-serif;
+	color: rgb(133, 11, 11);
+	text-transform: uppercase;
+	line-height: 10vmax;
+	text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+
+button {
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 1vmax;
+	font-family: 'Chilanka', sans-serif;
+	margin: 20px 0;
+	outline: none;
+	cursor: pointer;
+}
+
+button:hover {
+	background: rgb(177, 7, 7);
+	color: rgb(255, 255, 255);
+}
+
+}
