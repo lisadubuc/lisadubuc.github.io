@@ -126,6 +126,26 @@ section {
     width: 100%;
 }
 
+#s6 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(247, 153, 116);
+}
+
+#s6 article p {
+    background: rgb(253, 134, 134);
+    font-family: 'Arvo', italic;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
 .multi {
     -webkit-column-count: 1;
     -moz-column-count: 1;
