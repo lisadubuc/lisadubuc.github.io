@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <nav id="myNav" class="overlay">
+        <span class="closebtn" id="close">×</span>
+        <div class="overlay-content">
+            <a href="main.html" class="one"><span>Main</span></a>
+            <a href="moodboard.html" class="two"><span>Moodboard</span></a>
+            <a href="wireframe.html" class="three"><span>Wireframe</span></a>
+            <a href="mockup.html" class="four"><span>Mockup</span></a>
+        </div>
+    </nav>
+
+    <span id="trigger">☰</span>
+
+    <section id="s1">
+        <header>
+            <h1>Are You Hungry?</h1>
+        </header>
+    </section>
+
+
+    <section id="s2">
+        <article class="multi">
+            <h1>World Hunger is Still an Issue
+            </h1>
+            <p> The issue of world hunger seems to have taken the sidebar due to all the crazy things that have been
+                happening in the world in the year. To begin with it is important to define hunger. Hunger can be
+                associated with food deprivation or undernourishment (For Action Against Hunger). In a scientific way it
+                is referred to when someone has less than 1,800 calories per day (For Action Against Hunger). The cause
+                for hunger is often related to food security. Food security describes food availability, access, and
+                utilization (For Action Against Hunger). Therefore, one needs to have access to enough safe and
+                nutritious food to be able to function properly everyday to be considered food secure (For Action
+                Against Hunger). The world has the possibility of feeding the whole world yet, world hunger has not
+                stopped. There are more than 690 million people still going hungry (For Action Against Hunger). It would
+                be thought that the issue being so big would have been dealt with and would be decreasing but actually
+                it is on the rise, affecting 8.9 percent of people globally (For Action Against Hunger). It has been on
+                the rise since 2015 (United Nations). One in nine people do not get enough food to be healthy and lead
+                an active life (United Nations). The risk of hunger is greater than AIDS, malaria and tuberculosis
+                combined (United Nations). There are 8 percent of the population in North America and Europe who have
+                issues with Hunger (United Nations). Africa has the most with 20 percent (United Nations). Latin America
+                and the Caribbean have been rising on the scale of hunger although its prevalence is still below 7
+                percent (United Nations). In Asia the population that is undernourished is 12 percent (United Nations).
+                World hunger can be closely linked with poverty. </p>
+
+        </article>
+    </section>
+    <section id="s3">
+        <article class="multi">
+            <p> The interactions of social, political, demographic, and societal factors causes the lack or the change
+                in poverty therefore of food scarcity for some people (For Action Against Hunger). The UN gives the
+                information of: “For two decades, leading up to the millennium, global demand for food had increased
+                steadily, along with growth in the world’s population, record harvests, new technologies, improvements
+                in incomes, and the diversification of diets.” (United Nations). Due to Rising production and stronger
+                growth in demand since 2004 the prices for food has risen (United Nations). The increase of oil priced
+                in 2007 caused increases in fertilizer and other food production costs. (United Nations). A key event
+                caused certain key importers purchasing grains at any price to maintain domestic supplies (United
+                Nations). This event was the global economic crisis in 2008 and 2009 which undermined food security in
+                many countries (United Nations). Over the years, the UN Security Council found that a big result of the
+                food crisis was related to conflicts (For Action Against Hunger). It is often at its worst when the
+                conflict is prolonged and institutions are weakened (For Action Against Hunger). In 2020, it is also
+                found that it is even worse with conflicts related to climate-related shocks (For Action Against
+                Hunger). More and more, natural disasters related to climate change have challenged countries with food
+                security and availability (For Action Against Hunger). </p>
+
+        </article>
+    </section>
+    <section id="s4">
+        <article class="multi">
+            <p> The UN had a goal to have a Zero Hunger Target by 2030 but this goal would not be achieved (United
+                Nations). In 2008, the High-Level Task Force on the Global Food Security Crisis was established by the
+                UN (United Nations). The goal of the Task Force is to “promote a comprehensive and unified response of
+                the international community to the challenge of achieving global food and nutrition security.” (United
+                Nations). The UN put in place in the 2000s the Millennium Development Goals (MDGs) to fight poverty
+                which remained in place until 2015 (United Nations). It was the most successful anti-poverty movement in
+                history (United Nations). The goal of the Millennium Development Goals was to reduce by half the
+                proportion of people living in extreme poverty (United Nations). This was achieved in 2010 when the
+                deadline for this achievement was meant to be in 2015 which is a greater progress (United Nations). This
+                caused for undernourished people in the developing regions fell by almost half (United Nations). This
+                improvement does not change the fact that world hunger has been back on the rise. There is the need for
+                more awareness and progress to be made with the issue. It has been put on the back road for a while due
+                to all the extreme situations happening in the world right now. Although, these extreme situations are
+                also related to being a cause for the hunger in the world. Covid does not help in the situation due to
+                all the restrictions put in place and the lockdowns to try and stop the risk of spreading. Therefore,
+                there is even more need to stop the increase of hunger and stop it completely.
+            </p>
+
+        </article>
+    </section>
+
+    <script>
+        const trig = document.querySelector('#trigger');
+        const closer = document.querySelector('#close');
+
+        trig.addEventListener('click', openNav);
+        closer.addEventListener('click', closeNav);
+
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+</body>
+
+</html>

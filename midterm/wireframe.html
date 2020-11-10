@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects page</title>
+    <link rel="stylesheet" type="text/css" href="css/wireframe.css">
+</head>
+
+<body>
+
+    <nav id="myNav" class="overlay">
+        <span class="closebtn" id="close">×</span>
+        <div class="overlay-content">
+            <a href="main.html" class="one"><span>Main</span></a>
+            <a href="moodboard.html" class="two"><span>Moodboard</span></a>
+            <a href="wireframe.html" class="three"><span>Wireframe</span></a>
+            <a href="mockup.html" class="four"><span>Mockup</span></a>
+        </div>
+    </nav>
+
+    <span id="trigger">☰</span>
+
+
+    <section id="s1">
+        <header>
+            <h1>Wireframe</h1>
+        </header>
+    </section>
+
+    <section id="s2">
+        <article>
+
+            <img src="images/wireframe.png" alt="" height="900" width="600"></a>
+        </article>
+
+
+        <script>
+            const trig = document.querySelector('#trigger');
+            const closer = document.querySelector('#close');
+
+            trig.addEventListener('click', openNav);
+            closer.addEventListener('click', closeNav);
+
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+        </script>
+</body>
+
+</html>

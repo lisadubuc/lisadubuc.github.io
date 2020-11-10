@@ -148,6 +148,46 @@ section {
 	font-weight: normal;
 }
 
+#s7 {
+	color: rgb(236, 85, 85);
+	font-family: 'Sansita Swashed';
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#s7 article {
+	margin: 24px;
+}
+
+#s7 h1 {
+	font-family: 'Arvo', italic;
+	font-size: 36px;
+	text-transform: uppercase;
+	color: rgb(238, 42, 42);
+	font-weight: normal;
+}
+
+#s8 {
+	color: rgb(178, 183, 204);
+	font-family: 'Sansita Swashed';
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#s8 article {
+	margin: 24px;
+}
+
+#s8 h1 {
+	font-family: 'Arvo', italic;
+	font-size: 36px;
+	text-transform: uppercase;
+	color: rgb(180, 184, 202);
+	font-weight: normal;
+}
+
 .multi {
 	-webkit-column-count: 1;
 	-moz-column-count: 1;

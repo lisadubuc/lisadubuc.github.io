@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects page</title>
+    <link rel="stylesheet" type="text/css" href="css/mockup.css">
+</head>
+
+<body>
+
+    <nav id="myNav" class="overlay">
+        <span class="closebtn" id="close">×</span>
+        <div class="overlay-content">
+            <a href="main.html" class="one"><span>Main</span></a>
+            <a href="moodboard.html" class="two"><span>Moodboard</span></a>
+            <a href="wireframe.html" class="three"><span>Wireframe</span></a>
+            <a href="mockup.html" class="four"><span>Mockup</span></a>
+        </div>
+    </nav>
+
+    <span id="trigger">☰</span>
+
+
+    <section id="s1">
+        <header>
+            <h1>Mockup</h1>
+        </header>
+    </section>
+
+    <section id="s2">
+        <article>
+
+            <img src="images/mock1.png" alt="" height="1000" width="800"></a>
+        </article>
+    </section>
+    <section id="s2">
+        <article>
+
+            <img src="images/mock2.png" alt="" height="1000" width="800"></a>
+        </article>
+    </section>
+    <section id="s2">
+        <article>
+
+            <img src="images/mock3.png" alt="" height="1000" width="800"></a>
+        </article>
+    </section>
+    <script>
+        const trig = document.querySelector('#trigger');
+        const closer = document.querySelector('#close');
+
+        trig.addEventListener('click', openNav);
+        closer.addEventListener('click', closeNav);
+
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+</body>
+
+</html>

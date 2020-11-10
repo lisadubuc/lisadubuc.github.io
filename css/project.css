@@ -35,21 +35,37 @@ section {
 
 }
 
-#s1 h2 {
+
+
+#s1 h1 {
 	font-family: 'Sansita Swashed';
-	font-size: 20px;
+	font-size: 50px;
 	line-height: 10px;
 	text-transform: capitalize;
-	color: white;
+	color: rgb(255, 255, 255);
 	font-weight: normal;
 }
 
-#s1 h1 {
+#s2 {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	background: rgb(115, 236, 252);
+}
+
+
+
+#s2 article p {
+	background: rgb(173, 228, 253);
 	font-family: 'Arvo', italic;
-	font-size: 48px;
-	color: white;
-	text-transform: uppercase;
-	font-weight: normal;
+	font-size: 20px;
+	color: rgb(255, 255, 255);
+	padding: 10px 20px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
 }
 
 

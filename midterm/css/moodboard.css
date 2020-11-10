@@ -1,0 +1,256 @@
+/* TYPE */
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Sansita+Swashed&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* PHONE LAYOUT */
+
+html,
+body {
+    height: 100%;
+}
+
+section {
+    position: relative;
+    padding: 20px;
+}
+
+#s1 {
+    min-height: 100%;
+    height: auto;
+    background: url(/midterm/images/kids.jpg) fixed center center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#s1 header {
+    text-align: center;
+
+}
+
+#s1 h1 {
+    font-family: 'Sansita Swashed';
+    font-size: 50px;
+    line-height: 10px;
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+}
+
+#s1 h1 {
+    font-family: 'Sansita Swashed';
+    font-size: 50px;
+    line-height: 10px;
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+}
+
+#s2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(250, 111, 57, 0.685);
+}
+
+#s3 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(250, 111, 57, 0.685);
+}
+
+
+.multi {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+}
+
+
+
+/* OVERLAY MENU INFO */
+#trigger {
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9;
+    color: rgb(175, 60, 80);
+    font-weight: bold;
+}
+
+#trigger:hover {
+    color: rgb(233, 164, 85);
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.95);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.overlay a {
+    position: relative;
+    padding: 0px;
+    text-decoration: none;
+    font-family: 'Arvo', italic;
+    font-size: 42px;
+    color: white;
+    transition: all 0.5s;
+    text-transform: uppercase;
+    font-weight: normal;
+    flex: 1 100%;
+}
+
+
+
+.overlay a.one {
+    background: rgb(240, 120, 76);
+}
+
+.overlay a.two {
+    background: rgb(218, 123, 60);
+}
+
+.overlay a.three {
+    background: rgb(209, 77, 37);
+}
+
+.overlay a.four {
+    background: rgb(170, 43, 39);
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #fff;
+    background: rgb(209, 56, 81);
+}
+
+.overlay a span {
+    position: absolute;
+    left: 20px;
+    bottom: 0px;
+    transform: rotate(0deg);
+    transform-origin: left top;
+}
+
+.closebtn {
+    position: absolute;
+    z-index: 99;
+    top: 30px;
+    right: 10px;
+    font-size: 50px !important;
+    line-height: 0px;
+    cursor: pointer;
+    padding: 8px;
+    text-decoration: none;
+    font-family: 'Passion One', cursive;
+    color: #fff;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.closebtn:hover {
+    color: #222;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px;
+    }
+
+    .closebtn {
+        font-size: 40px !important;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+/* TABLET LAYOUT  */
+
+@media only screen and (min-width: 481px) {
+    .overlay a {
+        flex: 1 auto;
+        font-size: 72px;
+    }
+
+    .overlay a:hover,
+    .overlay a:focus {
+        flex: 2 auto;
+    }
+
+    .overlay a span {
+        transform: rotate(-90deg);
+        transform-origin: left top;
+    }
+
+    #logo img {
+        width: 60px;
+        height: auto;
+    }
+
+    #s1 h2 {
+        font-size: 30px;
+        line-height: 15px;
+    }
+
+    #s1 h1 {
+        font-size: 72px;
+    }
+
+
+    #s3 article {
+        flex: 1 auto;
+    }
+
+    .multi {
+        column-count: 3;
+    }
+}
+
+
+/* DESKTOP LAYOUT  */
+
+@media only screen and (min-width: 769px) {
+    #logo img {
+        width: 50px;
+        height: auto;
+    }
+
+    #s1 h2 {
+        font-size: 40px;
+        line-height: 0px;
+    }
+
+    #s1 h1 {
+        font-size: 96px;
+    }
+
+}
