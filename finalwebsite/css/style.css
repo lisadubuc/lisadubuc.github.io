@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* PHONE LAYOUT */
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-container {
+    height: 100%;
+    width: auto;
+}
+
+.page-container ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: fit-content;
+}
+
+.page {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-bar {
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    padding: 20px;
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: lightgrey;
+}
