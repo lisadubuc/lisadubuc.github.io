@@ -9,22 +9,32 @@
 </head>
 
 <body>
-    <div class="page-container">
-        <ul>
-            <li class="page">
-                <h1>Page 1</h1>
-            </li>
-            <li class="page">
-                <h1>Page 2</h1>
-            </li>
-            <li class="page">
-                <h1>Page 3</h1>
-            </li>
-        </ul>
+    <div id="page-container">
+        <div id="intro-template" class="page intro hidden">
+            <span class="intro-title" onclick="nextQuestion()">INTRO</span>
+        </div>
+        <div id="outro-template" class="page outro hidden">
+            OUTRO
+        </div>
+        <div id="query-template" class="page query hidden">
+            <span class="question"></span>
+            <div class="answers">
+                <div class="answer-1 answer" onclick="nextQuestion()">
+                    <img class="answer-image">
+                    <span class="answer-text"></span>
+                </div>
+
+                <Span> OR </Span>
+
+                <div class="answer-2 answer" onclick="nextQuestion()">
+                    <img class="answer-image">
+                    <span class="answer-text"></span>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="bottom-bar">
         <a class="button" onclick="startOver()">Start Over</a>
-        <a class="button" onclick="changeOrder()">Next</a>
     </div>
 </body>
 

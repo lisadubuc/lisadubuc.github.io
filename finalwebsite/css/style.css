@@ -14,28 +14,67 @@ body {
     flex-direction: column;
 }
 
-.page-container {
-    height: 100%;
-    width: auto;
+.hidden {
+    display: none !important;
 }
 
-.page-container ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
+#page-container {
     height: 100%;
     width: fit-content;
+    display: flex;
+}
+
+#page-container.slide {
+    transition: margin 500ms;
 }
 
 .page {
+    height: 100%;
     width: 100vw;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-title {
+    font-size: 50px;
+}
+
+.question {
+    height: 25%;
+    font-size: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.answers {
+    height: 75%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.answer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.answer:hover {
+    cursor: pointer;
+}
+
+.answer-image {
+    height: 300px;
+    width: auto;
+}
+
 .bottom-bar {
-    padding: 40px;
+    padding: 30px;
     display: flex;
     justify-content: space-between;
 }
