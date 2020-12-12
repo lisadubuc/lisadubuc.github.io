@@ -36,28 +36,30 @@
             <a href="/midterm/main.html" target="blank">
                 <img src="images/midterm.png" alt="" height="500" width="800"></a>
         </article>
+    </section>
 
-        <section id="s3">
-            <article>
-                <p>Final</p>
-                <a href="/finalwebsite/main.html" target="blank">
-                    <img src="images/final.png" alt="" height="500" width="800"></a>
-            </article>
-            <script>
-                const trig = document.querySelector('#trigger');
-                const closer = document.querySelector('#close');
+    <section id="s3">
+        <article>
+            <p>Final</p>
+            <a href="/finalwebsite/main.html" target="blank">
+                <img src="images/final.png" alt="" height="500" width="800"></a>
+        </article>
+    </section>
+    <script>
+        const trig = document.querySelector('#trigger');
+        const closer = document.querySelector('#close');
 
-                trig.addEventListener('click', openNav);
-                closer.addEventListener('click', closeNav);
+        trig.addEventListener('click', openNav);
+        closer.addEventListener('click', closeNav);
 
-                function openNav() {
-                    document.getElementById("myNav").style.width = "100%";
-                }
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
 
-                function closeNav() {
-                    document.getElementById("myNav").style.width = "0%";
-                }
-            </script>
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
 </body>
 
 </html>

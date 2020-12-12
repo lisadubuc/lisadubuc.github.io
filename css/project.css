@@ -51,13 +51,13 @@ section {
 	flex-flow: row wrap;
 	justify-content: space-between;
 	align-items: center;
-	background: rgb(115, 236, 252);
+	background: rgb(173, 228, 253);
 }
 
 
 
 #s2 article p {
-	background: rgb(173, 228, 253);
+	background: rgb(189, 235, 241);
 	font-family: 'Arvo', italic;
 	font-size: 20px;
 	color: rgb(255, 255, 255);
@@ -73,13 +73,13 @@ section {
 	flex-flow: row wrap;
 	justify-content: space-between;
 	align-items: center;
-	background: rgb(115, 236, 252);
+	background: rgb(173, 228, 253);
 }
 
 
 
 #s3 article p {
-	background: rgb(173, 228, 253);
+	background: rgb(189, 235, 241);
 	font-family: 'Arvo', italic;
 	font-size: 20px;
 	color: rgb(255, 255, 255);
