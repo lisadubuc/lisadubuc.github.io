@@ -45,7 +45,6 @@ body {
 }
 
 .page {
-    height: 100%;
     width: 100vw;
     flex-basis: 100%;
     display: flex;
