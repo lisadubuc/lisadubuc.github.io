@@ -1,17 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&family=Varela+Round&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* PHONE LAYOUT */
+#logo {
+    margin-left: 20px;
+    margin-top: 26px;
+    color: #fff;
+    z-index: 10;
+}
+
+#logo img {
+    width: 60px;
+    height: auto;
+}
 
 html,
 body {
     height: 100%;
+    background: url(/finalwebsite/image/lines.jpg) fixed center center no-repeat;
+    background-size: cover;
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    font-family: Varela Round;
 }
 
 .hidden {
@@ -22,6 +37,7 @@ body {
     height: 100%;
     width: fit-content;
     display: flex;
+    min-height: 0;
 }
 
 #page-container.slide {
@@ -29,39 +45,63 @@ body {
 }
 
 .page {
-    height: 100%;
     width: 100vw;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .intro {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .intro-title {
-    font-size: 50px;
+    font-size: 30px;
+    font-family: Ranchers;
+    text-align: center;
+}
+
+.intro-subtitle {
+    font-size: 15px;
+    font-family: Varela Round;
+    color: rgb(102, 99, 99);
+    text-align: center;
 }
 
 .question {
-    height: 25%;
-    font-size: 40px;
+    margin: 0% 5%;
+    font-size: 14px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: Ranchers;
+    text-align: center;
 }
 
 .answers {
-    height: 75%;
+    flex-grow: 1;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    font-family: Ranchers;
+    font-size: 14px;
+    min-height: 0;
+    margin: 0% 5%;
 }
 
 .answer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
+    justify-content: center;
+    flex-grow: 1;
+    width: 100%;
 }
 
 .answer:hover {
@@ -69,23 +109,87 @@ body {
 }
 
 .answer-image {
-    height: 300px;
-    width: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex: 0 1 50%;
+    width: 100%;
+}
+
+.answer-text {
+    margin: 2% 0%;
+}
+
+.outro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+}
+
+.outro-text {
+    font-size: 14px;
+    font-family: Varela Round;
+    color: black;
 }
 
 .bottom-bar {
-    padding: 30px;
+    padding: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .button {
     padding: 20px;
-    border: 1px solid lightslategray;
+    border: 1px solid rgb(199, 100, 100);
     border-radius: 5px;
 }
 
 .button:hover {
     cursor: pointer;
-    background-color: lightgrey;
+    background-color: rgb(226, 51, 51);
+}
+
+@media only screen and (min-width: 420px) {
+
+    .intro-title {
+        font-size: 50px;
+    }
+
+    .intro-subtitle {
+        font-size: 30px;
+    }
+
+    .answers {
+        flex-direction: row;
+        flex-grow: 0;
+        flex-basis: 50%;
+        font-size: 30px;
+    }
+
+    .question {
+        font-size: 40px;
+    }
+
+    .outro-text {
+        font-size: 30px;
+        font-family: Varela Round;
+        color: black;
+    }
+
+    .bottom-bar {
+        padding: 30px;
+    }
+
+}
+
+@media only screen and (min-width: 1025px) {
+    .answers {
+        flex-grow: 1;
+    }
+
+    .answer-image {
+        flex-basis: 100%;
+    }
 }

@@ -9,25 +9,38 @@
 </head>
 
 <body>
-    <div id="page-container">
+    <div id="logo">
+        <img src="image/mouth.jpg">
+    </div>
+    <div id="page-container" onclick="nextQuestion()">
         <div id="intro-template" class="page intro hidden">
-            <span class="intro-title" onclick="nextQuestion()">INTRO</span>
+            <span class="intro-title">How do you live your day in Montreal?</span>
+            <span class="intro-subtitle">(Click anywhere to continue)</span>
         </div>
         <div id="outro-template" class="page outro hidden">
-            OUTRO
+            <span class="outro-text">
+                How did your day go? Well! You had everything you needed to function good meals. You are lucky! Do you
+                remember the homeless person you helped? Maybe? No? Well you may have provided them with the only food
+                they
+                will have this week! There are more than 690 million people still going hungry in the world! Count
+                yourself
+                lucky you aren’t one of them! For more information on the topic check here:
+                <a href='https://www.un.org/en/sections/issues-depth/food/index.html' target="_blank">
+                    United Nation Website</a>
+            </span>
         </div>
-        <div id="query-template" class="page query hidden">
+        <div id="query-template" class="page q hidden">
             <span class="question"></span>
             <div class="answers">
-                <div class="answer-1 answer" onclick="nextQuestion()">
-                    <img class="answer-image">
+                <div class="answer-1 answer">
+                    <div class="answer-image"></div>
                     <span class="answer-text"></span>
                 </div>
 
                 <Span> OR </Span>
 
-                <div class="answer-2 answer" onclick="nextQuestion()">
-                    <img class="answer-image">
+                <div class="answer-2 answer">
+                    <div class="answer-image"></div>
                     <span class="answer-text"></span>
                 </div>
             </div>

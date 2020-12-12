@@ -1,5 +1,5 @@
 let queries = [{
-        Question: "Eggs or toast?",
+        Question: "What do you eat in the morning?",
         Answer1: {
             Text: "Eggs",
             Image: "egg.jpg"
@@ -10,7 +10,7 @@ let queries = [{
         }
     },
     {
-        Question: "Walking to work?",
+        Question: "What do you drink on your way to work?",
         Answer1: {
             Text: "Cafe",
             Image: "cafe.jpg"
@@ -21,79 +21,79 @@ let queries = [{
         }
     },
     {
-        Question: "Lunch?",
+        Question: "What do you eat for lunch?",
         Answer1: {
             Text: "Hamburger",
             Image: "hamberg.jpg"
         },
         Answer2: {
-            Text: "sushi",
+            Text: "Sushi",
             Image: "sushi.jpg"
         }
     },
     {
-        Question: "Streets?",
+        Question: "Walking back from lunch you see a homeless person what do you do?",
         Answer1: {
             Text: "Give money to the homeless",
             Image: "money.jpg"
         },
         Answer2: {
-            Text: "your food",
+            Text: "Give your food",
             Image: "lunch.jpg"
         }
     },
     {
-        Question: "Work?",
+        Question: "What snack do you eat at work?",
         Answer1: {
             Text: "Fruit",
             Image: "fruit.jpg"
         },
         Answer2: {
-            Text: "cookies",
+            Text: "Cookies",
             Image: "cookie.jpg"
         }
     },
     {
-        Question: "Home supper?",
+        Question: "What do you eat for supper?",
         Answer1: {
             Text: "Soup",
             Image: "soup.png"
         },
         Answer2: {
-            Text: "chicken pot pie",
+            Text: "Chicken pot pie",
             Image: "pie.jpg"
         }
     },
     {
-        Question: "Desert?",
+        Question: "What about dessert?",
         Answer1: {
             Text: "Cupcake",
             Image: "cupcake.jpg"
         },
         Answer2: {
-            Text: "popcorn",
+            Text: "Popcorn",
             Image: "popcorn.png"
         }
     },
     {
-        Question: "Night out?",
+        Question: "What do you think at your night out?",
         Answer1: {
             Text: "Gin tonic",
             Image: "gin_tonic.jpg"
         },
         Answer2: {
-            Text: "beer",
+            Text: "Beer",
             Image: "beer.jpg"
         }
     },
     {
-        Question: "Late night snack?",
+        Question: "What about your late night snack?",
         Answer1: {
             Text: "Pizza",
             Image: "pizza.jpg"
         },
         Answer2: {
-            Text: "fries",
+            Text: "Fries",
             Image: "fries.jpg"
         }
     },
@@ -146,7 +146,7 @@ function changeAnswer(element, answer) {
     let imageElement = element.querySelector(".answer-image");
 
     textElement.textContent = answer.Text;
-    imageElement.src = "image/" + answer.Image;
+    imageElement.style.backgroundImage = "url(image/" + answer.Image + ")";
 }
 
 function animatePageChange(newElement) {
@@ -168,7 +168,7 @@ function nextQuestion() {
     currentQuery++;
     if (currentQuery < numberOfQuestions) {
         displayCurrentQuery();
-    } else {
+    } else if (currentQuery === numberOfQuestions) {
         displayOutroPage();
     }
 }
